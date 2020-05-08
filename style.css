@@ -1,0 +1,457 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: royalblue;
+}
+.upper-tag{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 50px;
+    background-color: royalblue;
+}
+.social-media-icons ,.text ,.donatation-buttons{
+    text-align: center;
+    margin-top:5px;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+div.social-media-icons ul, div.donatation-buttons ul{
+    display: flex;
+}
+div.social-media-icons ul li{
+    list-style: none;
+}
+div.social-media-icons ul a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+div.donatation-buttons ul li{
+    list-style: none;
+    padding: 3px;
+}
+div.donatation-buttons ul li button{
+    border: 1px solid green;
+    color: green;
+    font-size: 0.8em;
+    padding: 6px;
+}
+.text{
+    padding-top:5px;
+    color: white;
+}
+.sticky-header{
+    position: sticky;
+    top: 0px;
+}
+header{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+header .sylani-logo img{
+    height: 70px;
+    width: 200px;
+    padding: 10px;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.header-div{
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    list-style: none;
+    position: relative;
+}
+header nav ul li ul{
+    position: absolute;
+    top:30px;
+    background-color: whitesmoke;
+    display: none;
+}
+header nav ul li ul li{
+    display: block;
+    width: 200px;
+    font-size: 0.8em;
+}
+header nav ul li ul li:hover{
+    border-radius: none;
+    background-color: royalblue;
+}
+header nav ul li:hover ul{
+    display: block;
+}
+header nav ul li a{
+    height: 30px;
+    line-height: 30px;
+    color: black;
+    padding: 0 15px;
+    text-decoration: none;
+}
+header nav ul li a.active,
+header nav ul li a:hover{
+    color: white;
+    background-color: royalblue;
+    border-radius: 25px;
+    display: block;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+.menu-toggle{
+    float: right;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.sec1{
+    width: 100%;
+}
+
+
+}
+.sec3{
+    width: 100%;
+}
+.sec3 img{
+    width: 100%;
+    height: auto;
+}
+.sec4{
+    width: 100%;
+    background-color: whitesmoke;
+}
+.sec4 h2{
+    display: inline-block;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold ;
+    margin: 50px;
+    padding-top: 50px;
+    padding-left: 435px;
+}
+.title-icon{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 991px){
+    header{
+        padding: 0 15px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
+        /* display: none; */
+        position: absolute;
+        width: 100%;
+        height: calc(100vh-50px);
+        top: 70px;
+        left: -100%;
+        background-color: whitesmoke;
+        transition: 0.5s;
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    header nav ul li {
+        width: 100%;
+        border-bottom: 1px solid rgba(0.1,0.1,0.1,0.2);
+    }
+    .upper-tag{
+        height: auto;
+    }
+    header nav ul li.active ul{
+        position: relative;
+        top: 0px;
+        background-color: whitesmoke;
+    }
+    header nav ul li ul li{
+        width: 100%;
+        border-radius: none;
+    }
+    .sec1 img{
+        width: 350px;
+        height: auto;
+    }
+    .sec2 p{
+        margin: 20px;
+    }
+    .sec4 h1{
+        font-size: 1.4em;
+    }
+    .sec4-doing-div{
+        max-width: 330px;
+    }
+    .inner-div{
+        margin: 10px;
+    }
+    .sec4-doing-div{
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mission {
+    font-family: 'Merriweather';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#boxhead {
+    margin-left: 70px;
+}
+
+.mini {
+    border: 1px solid rgb(224, 224, 224);
+    padding: 18px 0px 18px 15px;
+    margin: -20px 25px 40px 10px;
+    background-color: rgb(245, 245, 245);
+    width: 350px;
+}
+
+.mini h4 {
+    /* display: block;
+    margin: 0; */
+    font-size: 15px;
+    font-weight: bold;
+    /* text-align: center; */
+    padding-left: 40px;
+    padding-top: 8px;
+    color: #316DC3;
+}
+
+#miniCards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 770px;
+}
+
+.headingm h3 {
+    display: flex;
+    margin: 40px 50px 30px 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #316DC3;
+}
+
+#upmarq {
+    margin: 32px 230px 50px 0px;
+}
+
+#upmarq h3 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #316DC3;
+}
+
+#upmarq marquee {
+    width: 270px;
+    height: 180px;
+    display: flex;
+    text-align: center;
+    text-align: justify;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(124, 124, 124);
+    /* margin: 20px; */
+    /* padding-top: 50px; */
+    /* display: flex; */
+}
+.EventsGalllery
+{
+
+    margin:0 auto;
+    text-align: center;
+    display: inline-block;
+    margin: 50px 0px 120px 0px;
+}
+
+
+.Homefooter
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+
+
+
+
+}
+
+
+.scrollToTop {
+    background: white;
+    bottom: 15px;
+    display: none;
+    height: 35px;
+    padding: 2px;
+    position: fixed;
+    right: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    z-index: 99999;
+
+}
+
+
+
+.Homefooter div
+{
+    background-color: black;
+    color: white;
+    display: inline-block;
+     width: 350px;
+    height: 200px;
+
+
+
+}
+
+
+.footer{
+
+    padding-top: 40px;
+}
+
+.footerul{
+    display: inline;
+    padding: 3px;
+}
+.footer-bottom
+{
+    background-color: #316DD9 !important;
+    font-size: small;
+   padding-top: 10px;
+    /* text-align: left; */
+}
+
+
+.indicator {
+    margin-left: 3px;
+}
+
+ul.dropdown
+{
+    top: 71px;
+
+list-style: none;
+margin: 0;
+padding: 0;
+/* display: none; */
+position: absolute;
+z-index: 99;
+min-width: 180px;
+white-space: nowrap;
+background: #fff;
+}
+
+
+
+
+
+
+.shadow{
+
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.15);
+
+}
+.test-color{
+
+    color: royalblue;
+    font-weight: 500;
+    font-size: 20px;
+}
+.carousel{
+    height: 80vh !important;
+}
+.container-fluid mt-5{
+
+}
+
+
+
+
+
+.Marque
+   {
+
+
+       height: 50px;
+
+
+   }
+   .Marque marquee
+   {
+       background-color: #316DC3;
+       color: white;
+       height:30px;
+       margin: 10px 0px 10px 0px;
+       vertical-align: middle;
+       margin-top: 20px;
+
+   }
+.IntroDiv,.WorkDiv
+{
+   text-align: center;
+  margin:0 auto;
+  background-color: #f7f8fa !important;
+    padding :30px;
+
+
+}
+
+.IntroDiv p.text-left
+{   text-align: justify;
+   margin:0 auto;
+
+}
+
+.text-uppercase {
+   text-transform: uppercase!important;
+}
+
+.text-themeout-colored {
+   color: #427900 !important;
+}
+.font-weight-600 {
+   font-weight: 600 !important;
+}
